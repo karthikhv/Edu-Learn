@@ -1,0 +1,152 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  border-style: none;
+  transition: 1.2s ease-in-out;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Contact section */
+.contacts {
+  background-color: #f7f9fc;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flexSB {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.row {
+  width: 100%;
+}
+
+.box h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.box p {
+  color: #0a0909;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Boxes for Address, Email, and Phone */
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.items .grid2{
+  display: flex;
+}
+.box {
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+h4 {
+  margin-top: 0;
+  color: #000000;
+}
+
+/* Form Styles */
+form {
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #5c6bc0;
+}
+
+.flexSB {
+  margin-bottom: 20px;
+}
+
+.flexSB > input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button.primary-btn {
+  cursor: pointer;
+  background-color: #5c6bc0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button.primary-btn:hover {
+  background-color: #3f51b5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .items {
+      grid-template-columns: 1fr;
+  }
+
+  .flexSB > input {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  .row {
+    width: 100%;
+  }
+  
+  .box h1 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #090909;
+  }
+  
+  .box p {
+    color: #0a0909;
+    display: flex;
+    font-size: 15px;
+  }
+  h4{
+    font-size: 15px;
+  }
+  
+}

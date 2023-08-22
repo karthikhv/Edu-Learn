@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.overlay{
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.bgv{
+  width: 100%;
+  height: 100vh;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-menu{
+  position: absolute;
+  width: 100%;
+  top: 5px;
+}
+.nav-menu p{
+  font-size: 15px;
+  margin-left: 10px;
+}
+.nav-menu h1{
+  color: white;
+}
+.nav-menu a{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.nav-men{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+.nav-menu ul{
+  text-decoration: none;
+  display: flex;
+  width: 90%;
+  margin-left: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+  box-shadow: none;
+}
+.nav-menu li a{
+  text-decoration: none;
+  font-size: 2rem;
+  list-style: none;
+  color: white;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+}
+.nav-men a:hover{
+  cursor: pointer;
+  color: greenyellow;
+}
+.nav-men .active li{
+    margin: 5px;
+
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+  }
+@media screen and (max-width: 940px){
+  .nav-men{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 20;
+    left: -110%;
+    transform: translate(0);
+    transition: 1s ease-in-out;
+  }
+  .nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:0;
+  }
+  .nav-menu h1{
+    font-size: 35px;
+    transition: 1s ease-in-out;
+  }
+  .nav-menu p{
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .hamburger{
+    display:initial;
+    
+  }
+  .nav-men.active{
+    left: 0;
+
+  }
+  .nav-men.active li{
+    margin: 12px 10px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.312);
+    box-shadow: 0px 2px  2px 1px rgba(92, 254, 92, 0.404);
+    border-radius: 10px;
+  }
+  .nav-men :hover{
+    color: greenyellow;
+    transition: none;
+  }
+  .nav-men li a{
+    font-size: 25px;
+    list-style: none;
+  }
+  .hamburger{
+    display: initial;
+  }
+}
+@media screen and (max-width: 540px){
+  .nav-men li a{
+    font-size: 15px;
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+  }
+.nav-menu {
+  padding: 1px 2px;
+}
+}

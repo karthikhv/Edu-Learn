@@ -1,0 +1,268 @@
+.coursesCard {
+  padding: 5px 10px;
+  width:90%;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+}
+.coursesCard .items {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.coursesCard .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #323434;
+  padding: 5px;
+}
+.coursesCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.outline-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.coursesCard .text {
+  margin-left: 15px;
+  text-align:left;
+}
+.coursesCard .text h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.coursesCard .rate {
+  margin: 20px 0;
+  color: #1eb2a6;
+}
+.coursesCard .rate i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.coursesCard .details .dimg img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.coursesCard .details .box {
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+.coursesCard .details span {
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
+.coursesCard .price {
+  margin: 30px 0;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+.coursesCard h3 {
+  font-weight: 500;
+  color: #1eb2a6;
+}
+/* courses.css */
+.container.grid2 {
+  display: grid;
+  grid-template-columns:repeat(3,1fr); /* Three equal columns */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: 20px; /* Space between each item/card */
+  padding: 10px; /* Container padding */
+}
+
+.items {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px; /* If you want rounded corners */
+  box-shadow: 0 2px 5px rgba(163, 42, 42, 0.1); /* If you want a subtle shadow */
+}
+
+.content.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-evenly; /* Distribute space between left and right parts */
+}
+
+.left .img img {
+  max-width: 100%; /* Ensure image doesn't overflow its container */
+  height: auto;
+}
+
+.text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between stars and the label */
+}
+
+.details {
+  display: flex;
+  gap: 15px; /* Space between teacher details */
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.dimg img {
+  max-width: 50px;
+  height: auto;
+  border-radius: 50%; /* If you want the teacher image to be circular */
+}
+
+.outline-btn {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+  cursor: pointer;
+}
+/*-------------online---------*/
+.online {
+ margin: 0;
+ width: 100%;
+}
+.container{
+  max-width: 1200px;
+  margin: auto 0;
+  padding: 0px 15px;
+}
+/* courses.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Adjust this value based on your design preference */
+}
+
+.box {
+  /* Styles specific for each box */
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img .show {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Assuming there's some hover effect to show the hoverCover image */
+.img:hover .show {
+  display: block;
+}
+
+.online .box {
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+  background-color: #fbfbfb;
+  transition: 0.s;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.online .img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+}
+.online img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.online h1 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+.online span {
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 5px;
+}
+.online span:hover{
+  cursor: pointer;
+  background-color:rgb(93, 198, 247) ;
+  transition: 0.3s;
+}
+.online .box .show {
+  opacity: 0;
+}
+.online .box:hover {
+  background-color: #636262;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.online .box:hover .show {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.online .box:hover h1 {
+  color: #fff;
+}
+/*-------------online---------*/
+@media screen and (max-width: 768px) {
+  .container.grid2 {
+    display: grid;
+    grid-template-columns:none; /* Three equal columns */
+    gap: 20px; /* Space between each item/card */
+    padding: 5px; /* Container padding */
+}
+.coursesCard .img {
+  width: 30px;
+  height: 30px;
+}
+.coursesCard .text h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.grid3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center /* Adjust this value based on your design preference */
+}
+
+}
